@@ -1,0 +1,78 @@
+*          { margin:0; padding:0; }
+body       { padding: 0px; margin: 0px; font-family: Arial, Tahoma, Verdana, Georgia, sans-serif; font-size: 18px; line-height: 40px; color: #474747; }
+::-moz-selection {
+       background-color: inherit;
+       color: inherit;
+}
+::selection {
+       background-color: inherit;
+       color: inherit;
+}
+li{display: inline; cursor: pointer; }
+.level{cursor: pointer; }
+#sapper {margin: 50px auto; }
+
+.sounds{display: inline-block;   cursor: pointer;  margin: 0px 7px -10px 7px; width:32px; height:32px; background: url(volume_high.png);}
+
+.start {  
+  margin: 0px 0px 7px 0px;
+ 
+  display: inline-block;
+  background: #547980;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  
+  position: relative;
+  padding: .1rem .3em;
+
+  text-transform: uppercase;
+  font-size: .8em;
+  text-shadow: 0 0 2px #000;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7), inset 0 0 2px #FFF;
+}
+.start::after {
+  content: "";
+  display: block;
+  height: 50%;
+  width: 100%;
+  background: rgba(255, 255, 255, .4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.start:hover {
+  background: #45ADA8;
+}
+.field {width:40px; height:40px; margin: 0px; float:left; margin: 0px 1px 1px 0px; text-align: center; background: #bdbaba; font-weight: bold; background: #ccc; box-shadow: inset 0 0 10px #999;}
+
+.hit {background: red url('mine3.ico') no-repeat center; }
+.bomb {background: #777 url('mine4.ico') no-repeat center; }
+.empty {box-shadow: none; background: #d5d1d1;}
+.flag {background: #ccc url('flag.ico') no-repeat center; box-shadow: inset 0 0 10px #999; z-index:1000;}
+.flag1{ background: #777 url('mine2.ico') no-repeat center;}
+.flag2 {background: #777 url('flag.ico') no-repeat center;}
+.quest{z-index:1000;color: black;}
+.item1 {color: blue;}
+.item2 {color: green;}
+.item3 {color: red;}
+.item4 {color: #041857}
+.item5 {color: #0E5704;}
+.item6 {color: #690C0C;}
+.item7 {color: #572904;}
+.item8 {color: #000;}
+
+.item1:after {content: "1";}
+.item2:after {content: "2";}
+.item3:after {content: "3";}
+.item4:after {content: "4";}
+.item5:after {content: "5";}
+.item6:after {content: "6";}
+.item7:after {content: "7";}
+.item8:after {content: "8";}
+.quest:after {content: "?";}
+
